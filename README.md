@@ -6,8 +6,6 @@
 
 ```
 Java 1.8 
-
-
 ```
 
 ## Usage
@@ -33,10 +31,3 @@ dependencies {
 ## License
 
 Copyright (c) 2017 "reactor" dongkyu lee Licensed under the MIT license.
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
