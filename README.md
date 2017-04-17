@@ -2,16 +2,19 @@
 
  This Project is for practice using spring-boot with akka
 
-### Prerequisites
-
-```
-Java 1.8 
-```
-
 ## Usage
 ### Gradle
 
 ```
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+	maven {
+    url "http://repo.akka.io/snapshots/"
+  }
+}
+
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
