@@ -7,9 +7,15 @@ import akka.actor.IndirectActorProducer;
 
 /**
  * 
- * <h1> </h1>
+ * <h1>SpringActorProducer</h1>
  * <p>
- * <b>Note:</b> 
+ * <b>Note:</b> IndirectActorProducer is defines a class of actor creation strategies 
+ * deviating from the usual default of just reflectively instantiating the Actor subclass. 
+ * It can be used to allow a dependency injection framework to determine the actual actor class 
+ * and how it shall be instantiated.
+ * 
+ * This class is used by Spring to import actors.
+ * 
  * @author dklee
  */
 public class SpringActorProducer implements IndirectActorProducer{
