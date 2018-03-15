@@ -13,9 +13,9 @@ import akka.actor.ActorSystem;
 
 /**
  * 
- * <h1> </h1>
+ * <h1>Akka Runner</h1>
  * <p>
- * <b>Note:</b> 
+ * <b>Note:</b> This class is spring component to use test spring with akka
  * @author dklee
  */
 @Component

@@ -3,15 +3,15 @@ package com.study.practice.akka.config;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
-import akka.actor.Actor;
 import akka.actor.Extension;
 import akka.actor.Props;
 
 /**
  * 
- * <h1> </h1>
+ * <h1>Spring Extension</h1>
  * <p>
- * <b>Note:</b> 
+ * <b>Note:</b> Extends akka actor system to use akka with spring-boot
+ * 
  * @author dklee
  */
 @Component
@@ -21,7 +21,7 @@ public class SpringExtension implements Extension{
     
     /**
      * 
-     * 
+     * This method initailizes the spring applicationcontext
      *
      * @param
      * @return
@@ -33,11 +33,13 @@ public class SpringExtension implements Extension{
     }
     
     /**
-     * 
-     * 
+     * Props is a configuration object using in creating an Actor; it is immutable, 
+     * so it is thread-safe and fully shareable.
+     *
+     * This method uses actorBeanName to create an actor in spring-boot
      *
      * @param
-     * @return
+     * @return {@link Props}
      * @exception
      * @see
      */
